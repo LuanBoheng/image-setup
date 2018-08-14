@@ -1,3 +1,2 @@
-zshrc=/root/.zshrc
-cp my.zshrc $zshrc
-source $zshrc
+cp my.zshrc /root/.zshrc
+source /root/.zshrc
