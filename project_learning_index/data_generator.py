@@ -1,13 +1,24 @@
+#generate data
+
 import random
 
-size = 10
+size = 1000000
 data = []
 number_generator = random.random
 
-for i in range(10):
+for key in range(size):
     data.append (number_generator())
 
 data.sort()
 
 print(data)
 
+
+#write into file
+import sys
+
+f = open("data.csv","w")
+sys.stdout = f
+
+for key in range(size):
+    print(key, data[key], sep=',')

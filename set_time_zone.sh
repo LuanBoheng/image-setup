@@ -1,1 +1,1 @@
-sudo cp /usr/share/zoneinfo/Australia/Melbourne /etc/localtime
+cp /usr/share/zoneinfo/Australia/Melbourne /etc/localtime
