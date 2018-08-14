@@ -1,3 +1,3 @@
-python3 data_generator.py 10000 data.csv 
-./convert float data.csv data
-./btree data 5
+python3 data_generator.py 10000000 data.csv 
+time ./convert float data.csv data
+time ./btree data 5000
