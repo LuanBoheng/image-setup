@@ -2,12 +2,12 @@
 
 import random
 
-size = 10
+size = 1000000
 data = []
 number_generator = random.random
 
-for i in range(size):
-    data.append ([i,number_generator()])
+for key in range(size):
+    data.append (number_generator())
 
 data.sort()
 
@@ -15,9 +15,10 @@ print(data)
 
 
 #write into file
-import csv
-file_name = "data.txt"
-with open(file_name, 'wb') as f:
-    writer = csv.writer(f)
-    for key in range(len(data)):
-        writer.writerows(data[key])
+import sys
+
+f = open("data.csv","w")
+sys.stdout = f
+
+for key in range(size):
+    print(key, data[key], sep=',')
