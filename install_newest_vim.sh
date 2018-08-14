@@ -1,9 +1,9 @@
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-sudo apt install vim
-sudo apt install cmake
+add-apt-repository ppa:jonathonf/vim
+apt update
+apt install vim
+apt install cmake
 
-sudo apt-get install vim-gtk exuberant-ctags git
+apt-get install vim-gtk exuberant-ctags git
 rm -rf ~/.vim ~/.vimrc
 git clone https://github.com/ruchee/vimrc.git ~/vimrc
 mv ~/vimrc/vimfiles ~/.vim
